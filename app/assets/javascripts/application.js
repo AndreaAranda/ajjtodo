@@ -11,6 +11,13 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery-ui
 //= require jquery_ujs
+//= require foundation
 //= require turbolinks
 //= require_tree .
+
+$(function(){ $(document).foundation(); });
+$("#nombrejavier").on('click', function(){$("#nombrejavier").effect('highlight','slow')})
+$("#nombreandrea").on('click', function(){$("#nombreandrea").effect('highlight','slow')})
+$( "#datepicker" ).datepicker();
